@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+#back {
+    width: 100%;
+    height: 100%;
+}
+
+.image{ 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingArea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100%;
+
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nleft img {
+    height: 50px;
+}
+
+#nav a {
+    pointer-events: all;
+    text-decoration: none;
+    font-family: 'gilboy';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+#hero {
+    position: absolute;
+    top: 60%;
+    left: 0;
+
+    transform: translate(0%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+
+}
+
+#heroleft {
+    min-width: 50%;
+}
+
+#heroleft .elem {
+    height: 7.5vw;
+    overflow: hidden;
+    position: relative;
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: white;
+    font-size: 9vw;
+    font-weight: 100;
+    font-family: "kajiro";
+
+}
+
+#btn {
+    pointer-events: all;
+    font-size: 2.5vw;
+    font-weight: lighter;
+    margin-top: 50px;
+    padding: 8px 30px 4px 30px;
+    height: fit-content;
+    letter-spacing: 2px;
+    font-family: "kajiro";
+}
+
+#heroright {
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    color: #fff;
+}
+
+#heroright p {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#divImg {
+    width: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6eWxSVFebNTX4cB97USAkAfQyB0kcTiwigg&usqp=CAU);
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    background-color: aliceblue;
+    height: 150px;
+    border: 1px solid red;
+}
